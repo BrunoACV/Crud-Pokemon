@@ -1,0 +1,47 @@
+.return {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.body {
+    background-color: #202124;
+    padding-bottom: 950px;
+}
+.name-level-type-gender {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.name-level-type-gender input {
+    border-radius: 20px;
+    background-color: #848a96;
+}
+
+.name-level-type-gender select {
+    border-radius: 20px;
+    background-color: #848a96;
+}
+
+.form button {
+    margin-top: 20px;
+    background: #848a96;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.body a {
+    border-style:outset;
+    text-decoration: none;
+    background: #606582;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}

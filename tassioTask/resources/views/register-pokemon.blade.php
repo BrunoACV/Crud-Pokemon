@@ -12,11 +12,11 @@
 </head>
 
 <div class="body">
+
     <body>
-
-        <a href="/">Return</a>
-        <br>
-
+        <div class="return">
+            <a href="/">Return</a>
+        </div>
         {{-- This pokémon form will consume the data from the client side and push it into the database using the POST method --}}
         <div class="escolha">
             <form method="POST" action="/pokemon/register">
@@ -26,10 +26,10 @@
                 <input type="text" name="name" id="name" class="form-control" required />
 
                 <label for="nome">Level</label>
-                <input type="number" name="level" id="level" class="form-control" required />
+                <input type="number" name="level" class="form-control" required />
 
                 <label for="nome">Type</label>
-                <select type="text" name="type" id="type" class="form-control" required>
+                <select type="text" name="type" class="form-control" required>
                     <option value=""></option>
                     <option value="Bug">Bug</option>
                     <option value="Dark">Dark</option>
@@ -52,7 +52,7 @@
                 </select>
 
                 <label for="nome">Gender</label>
-                <select type="text" name="gender" id="gender" class="form-control" required>
+                <select type="text" name="gender" class="form-control" required>
                     <option value=""></option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>

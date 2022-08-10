@@ -11,7 +11,7 @@
     color: red;
 }
 .register-list a {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     background-color: #606582;
     text-decoration: none;
@@ -23,7 +23,4 @@
 }
 .register {
     margin-bottom: 20px;
-}
-
-.list {
 }

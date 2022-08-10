@@ -19,19 +19,25 @@
         <div class="return">
             <a href="/">Return</a>
         </div>
+
         <div class="container">
+           
             @foreach ($pokemons as $pokemon)
                 <div class="pokemon">
+
                     <div class="name-level" style="display:flex;">
                         <p>{{ $pokemon->name }} lvl-</p>
                         <p>{{ $pokemon->level }} </p>
                     </div>
+
                     <div class="edit-delete" style="display:flex;">
                         <a class="edit" href="/pokemon/edit/{{ $pokemon->id }}">Edit</a>
-                        <a class="delete" href="/pokemon/delete/{{ $pokemon->id }}"> Delete </a>
+                        <a class="delete" href="/pokemon/delete/{{ $pokemon->id }}">Delete</a>
                     </div>
+
                 </div>
             @endforeach
+       
         </div>
 
     </body>

@@ -23,7 +23,7 @@ class PokemonController extends Controller
     public function storePokemon(Request $request)
     {
         $register = new PokemonService;
-        return view('index', ['added' => $register->store($request)]);
+        return view('index', ['added' => $register->store($request)]) . redirect('pokemon/list');
     }
 
 
@@ -44,13 +44,12 @@ class PokemonController extends Controller
 
         $pokemon = new PokemonService;
         $pokemon->updateObject($request, $id);
-        return redirect('/');
+        return redirect('/pokemon/list');
     }
 
     public function delete($id)
     {
         PokemonService::delete($id);
-        return view('/index');
-
+        return redirect('/pokemon/list');
     }
 }

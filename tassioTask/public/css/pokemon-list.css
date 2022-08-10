@@ -30,12 +30,12 @@
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 .edit-delete a {
     padding-top: 0%;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     padding-left: 0%;
 }
 
