@@ -1,0 +1,29 @@
+.body {
+    background: #202124;
+    padding-bottom: 905px;
+}
+.escolha {
+    text-align: center;
+}
+
+.body h1 {
+    margin-bottom: 50px;
+    color: red;
+}
+.register-list a {
+    color: aliceblue;
+    font-size: 24px;
+    background-color: #606582;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0%;
+    padding-bottom: 5px;
+}
+.register {
+    margin-bottom: 20px;
+}
+
+.list {
+}

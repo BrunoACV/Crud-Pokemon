@@ -7,27 +7,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="{{ asset('css/pokemon-list.css') }}" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Pokemon</title>
 </head>
 
-<body>
+<div class="body">
 
-    <a href="/">Return</a>
-    <br>
+    <body>
 
-    @foreach ($pokemons as $pokemon)
-        {{ $pokemon->name }}
-        {{ $pokemon->level }}
+        <div class="return">
+            <a href="/">Return</a>
+        </div>
+        <div class="container">
+            @foreach ($pokemons as $pokemon)
+                <div class="pokemon">
+                    <div class="name-level" style="display:flex;">
+                        <p>{{ $pokemon->name }} lvl-</p>
+                        <p>{{ $pokemon->level }} </p>
+                    </div>
+                    <div class="edit-delete" style="display:flex;">
+                        <a class="edit" href="/pokemon/edit/{{ $pokemon->id }}">Edit</a>
+                        <a class="delete" href="/pokemon/delete/{{ $pokemon->id }}"> Delete </a>
+                    </div>
+                </div>
+            @endforeach
+        </div>
 
-        <a class="linkEdit" href="/pokemon/edit/{{ $pokemon->id }}">(Edit)</a>
-        <a href="/pokemon/delete/{{ $pokemon->id }}"> (Delete) </a>
-
-
-        <br>
-    @endforeach
-
-
-</body>
+    </body>
+</div>
 
 </html>

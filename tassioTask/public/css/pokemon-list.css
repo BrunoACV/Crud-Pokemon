@@ -1,0 +1,46 @@
+.return {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.body {
+    background: #202124;
+    padding-bottom: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.pokemon {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    background: #606582;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body a {
+    text-decoration: none;
+    background: #606582;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.edit-delete a {
+    padding-top: 0%;
+    color: aliceblue;
+    padding-left: 0%;
+}
+
+.container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
