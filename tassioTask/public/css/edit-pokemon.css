@@ -8,6 +8,7 @@
     background-color: #202124;
     padding-bottom: 950px;
 }
+
 .name-level-type-gender {
     text-align: center;
     color: rgb(255, 255, 255);
@@ -17,6 +18,7 @@
     padding-top: 20px;
     border-radius: 20px;
 }
+
 .name-level-type-gender input {
     border-radius: 20px;
     background-color: #848a96;
@@ -34,8 +36,9 @@
     border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
 }
+
 .body a {
-    border-style:outset;
+    border-style: outset;
     text-decoration: none;
     background: #606582;
     padding-top: 10px;

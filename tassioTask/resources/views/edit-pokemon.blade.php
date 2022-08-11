@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="{{ asset('css/edit-pokemon.css') }}" rel="stylesheet">
 
     <title>Pokemon</title>
 </head>
-
 
 <div class="body">
 
@@ -25,14 +23,14 @@
 
                         <div class="name-level-type-gender">
                             <label for="nome">Pokemon's name</label>
-                            <input type="text" name="name"class="form-control" />
+                            <input type="text" name="name" class="form-control" value="{{$pokemon->name}}" />
 
                             <label for="nome">Level</label>
-                            <input type="number" name="level" class="form-control" />
+                            <input type="number" name="level" class="form-control" value="{{$pokemon->level}}" />
 
                             <label for="nome">Type</label>
                             <select type="text" name="type" class="form-control" required>
-                                <option value=""></option>
+                                <option value="{{$pokemon->type}}">{{$pokemon->type}}</option>
                                 <option value="Bug">Bug</option>
                                 <option value="Dark">Dark</option>
                                 <option value="Dragon">Dragon</option>
@@ -53,16 +51,14 @@
                                 <option value="Water">Water</option>
                             </select>
 
-
                             <label for="nome">Gender</label>
-                            <select type="text" name="gender" class="form-control" required>
-                                <option value=""></option>
+                            <select type="text" name="gender" class="form-control" value="{{$pokemon->gender}}" required>
+                                <option value="{{$pokemon->gender}}">{{$pokemon->gender}}</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                             </select>
 
                             <button type="submit">Update</button>
-
                         </div>
                     </form>
                 </div>

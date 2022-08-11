@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Pokemon;
+use App\Models\Pokemon;
 use app\Http\Controllers\PokemonServices;
 use Monolog\Registry;
 
@@ -23,28 +23,26 @@ class PokemonController extends Controller
     public function storePokemon(Request $request)
     {
         $register = new PokemonService;
-        return view('index', ['added' => $register->store($request)]) . redirect('pokemon/list');
+        $register->store($request);
+        return redirect('pokemon/list');
     }
-
 
     public function listPokemon()
     {
-        $listPokemon = new PokemonService();
-        return view('pokemon-list', ['pokemons' => $listPokemon->list()]);
+        return view('pokemon-list', ['pokemons' => Pokemon::all()]);
     }
-
 
     public function updatePage($id)
     {
-        return view('edit-pokemon');
+        return view('edit-pokemon', ['pokemon' => Pokemon::findOrFail($id)]);
     }
 
     public function update(Request $request, $id)
     {
-
         $pokemon = new PokemonService;
         $pokemon->updateObject($request, $id);
-        return redirect('/pokemon/list');
+
+        return redirect('pokemon/list');
     }
 
     public function delete($id)

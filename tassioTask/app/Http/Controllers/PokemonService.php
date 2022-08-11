@@ -22,14 +22,12 @@ class PokemonService extends Controller
 
     public function list()
     {
-
         $pokemonList = Pokemon::simplePaginate();
         return $pokemonList;
     }
 
     public function updateObject($request, $id)
     {
-
         $pokemon = Pokemon::findOrFail($id);
         $pokemon->update([
 
